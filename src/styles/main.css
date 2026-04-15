@@ -1,0 +1,6 @@
+@import url(./info-side.css);
+
+body,
+#root {
+  height: 100vh;
+}

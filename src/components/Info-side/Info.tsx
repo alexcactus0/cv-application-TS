@@ -41,13 +41,13 @@ function Info() {
 
   const ActiveCard = cardComponents[infoCard];
   return (
-    <div className="infoSide">
+    <div className="infoSide flex flex-col justify-between items-center border-2 border-black h-full w-[40em]">
       <h1>CV Application</h1>
       <div className="infoCardsCon">
         <ActiveCard />
       </div>
       <div className="infoCardsNav">
-        <nav>
+        <nav className="flex gap-8">
           {infoCards.map((card) => (
             <button key={card.id} onClick={() => handleCardChange(card.id)}>
               {card.label}
