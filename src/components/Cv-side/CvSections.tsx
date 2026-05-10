@@ -1,43 +1,68 @@
-export function PersonalInfoSec() {
+import phone from "../../assets/phone.svg";
+import email from "../../assets/email.svg";
+import address from "../../assets/address.svg";
+
+export function UserImg() {
   return (
-    <section className="personalInfoCon">
-      <h1>Personal Information</h1>
-      <div className="personalInfParts">
-        <div className="personalLeft">
-          <p>Name: </p>
-          <p>Address: </p>
-          <p>Phone Number: </p>
-          <p>Email Address: </p>
-        </div>
-        <div className="personalRight">
-          <div className="userImgCon">No Image</div>
-        </div>
-      </div>
-    </section>
+    <div className="userImg border-2 rounded-[50%] h-24 w-24">Img here</div>
   );
 }
 
-export function ObjectiveSec() {
+export function ContactsSec() {
   return (
-    <section className="objectiveSection">
-      <h1>Objective</h1>
-      <div className="objectiveParts">
-        <p></p>
+    <div className="contactSec">
+      <h1>CONTACTS</h1>
+      <div className="contactInfo">
+        <div className="phnumber">
+          <img src={phone} alt="Telephone Icon" />
+          <p>Number</p>
+        </div>
+        <div className="emailInfo">
+          <img src={email} alt="Email Icon" />
+          <p>Email</p>
+        </div>
+        <div className="addressInfo">
+          <img src={address} alt="Address Icon" />
+          <p>Address</p>
+        </div>
+        <div className="lineh"></div>
       </div>
-    </section>
+    </div>
   );
 }
 
-export function EducatinSec() {
+export function AchievementsSec() {
   return (
-    <section className="educationSection">
-      <div className="educationParts">
-        <p>Education Level: </p>
-        <p>School Name: </p>
-        <p>School Address: </p>
-        <p>School Year: </p>
-        <p>Current Education Status: </p>
+    <div className="achievementsSe">
+      <h1>ACHIEVEMENTS</h1>
+      <div className="achievInfo">
+        <p>first degree here</p>
+        <p>second one here</p>
       </div>
+    </div>
+  );
+}
+
+export function SkillsSec() {
+  return (
+    <div className="skillsS">
+      <h1>SKILLS</h1>
+      <div className="skillsInfo">
+        <p>first skill here</p>
+        <p>second skill here</p>
+        <p>third skill here</p>
+      </div>
+    </div>
+  );
+}
+
+// ----------------------------- Other Side of the CV
+
+export function TitleNameSec() {
+  return (
+    <section className="titleName">
+      <h1>Your Title Name Here</h1>
+      <div className="linehz"></div>
     </section>
   );
 }
@@ -45,7 +70,27 @@ export function EducatinSec() {
 export function ProfessionalSec() {
   return (
     <section className="professionalSection">
-      <p></p>
+      <p>Your Professional Info here....</p>
+    </section>
+  );
+}
+
+export function EducatinSec() {
+  return (
+    <section className="educationSection">
+      <h1>EDUCATION</h1>
+      <div className="educationParts"></div>
+    </section>
+  );
+}
+
+export function WorkExperienceSec() {
+  return (
+    <section className="workExperience">
+      <h1>WORK EXPERIENCE</h1>
+      <div className="workExpInfo">
+        <p></p>
+      </div>
     </section>
   );
 }

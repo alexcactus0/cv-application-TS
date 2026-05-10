@@ -43,7 +43,7 @@ function Info() {
   return (
     <div className="infoSide flex flex-col justify-between items-center border-2 border-black h-full w-[40em]">
       <h1>CV Application</h1>
-      <div className="infoCardsCon">
+      <div className="infoCardsCon border-2 p-10 rounded">
         <ActiveCard />
       </div>
       <div className="infoCardsNav">

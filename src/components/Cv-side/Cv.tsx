@@ -1,19 +1,28 @@
 import {
+  UserImg,
+  ContactsSec,
+  AchievementsSec,
+  SkillsSec,
+  TitleNameSec,
   ProfessionalSec,
-  ObjectiveSec,
   EducatinSec,
-  PersonalInfoSec,
+  WorkExperienceSec,
 } from "./CvSections";
 
 function Cv() {
   return (
-    <div className="cvSide">
-      <div className="cv">
-        <h1>Curriculum Vitae</h1>
+    <div className="cvSide flex gap-5">
+      <div className="leftCv flex flex-col gap-[8em] border-2 align-center pt-10 pb-10">
+        <UserImg />
+        <ContactsSec />
+        <AchievementsSec />
+        <SkillsSec />
+      </div>
+      <div className="rightCv">
+        <TitleNameSec />
         <ProfessionalSec />
-        <ObjectiveSec />
         <EducatinSec />
-        <PersonalInfoSec />
+        <WorkExperienceSec />
       </div>
     </div>
   );

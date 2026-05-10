@@ -1,6 +1,9 @@
 @import url(./info-side.css);
+@import url(./cv-side.css);
 
 body,
 #root {
   height: 100vh;
+  display: flex;
+  gap: 7em;
 }

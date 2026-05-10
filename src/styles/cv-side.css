@@ -1,0 +1,13 @@
+.cvSide {
+  font-size: 12px;
+}
+
+.leftCv > div {
+  display: grid;
+  justify-content: center;
+}
+
+.contactInfo > div {
+  display: flex;
+  gap: 2em;
+}
