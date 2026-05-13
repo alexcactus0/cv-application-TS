@@ -10,23 +10,21 @@ export function UserImg() {
 
 export function ContactsSec() {
   return (
-    <div className="contactSec">
+    <div className="contactInfo">
       <h1>CONTACTS</h1>
-      <div className="contactInfo">
-        <div className="phnumber">
-          <img src={phone} alt="Telephone Icon" />
-          <p>Number</p>
-        </div>
-        <div className="emailInfo">
-          <img src={email} alt="Email Icon" />
-          <p>Email</p>
-        </div>
-        <div className="addressInfo">
-          <img src={address} alt="Address Icon" />
-          <p>Address</p>
-        </div>
-        <div className="lineh"></div>
+      <div className="phnumber">
+        <img src={phone} alt="Telephone Icon" />
+        <p>Number</p>
       </div>
+      <div className="emailInfo">
+        <img src={email} alt="Email Icon" />
+        <p>Email</p>
+      </div>
+      <div className="addressInfo">
+        <img src={address} alt="Address Icon" />
+        <p>Address</p>
+      </div>
+      <div className="lineh border-b-2 h-6"></div>
     </div>
   );
 }

@@ -1,11 +1,9 @@
-import Info from "./components/Info-side/Info";
-import Cv from "./components/Cv-side/Cv";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
-      <Info />
-      <Cv />
+      <Outlet />
     </>
   );
 }
