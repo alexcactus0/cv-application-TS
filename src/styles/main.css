@@ -1,9 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@layer theme, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
 @import url(./info-side.css);
 @import url(./cv-side.css);
+@import url(./home.css);
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
 
 body,
 #root {
   height: 100vh;
+  width: 100vw;
+  font-family: "roboto";
+}
+
+.cvs-wrapper {
   display: flex;
   gap: 7em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.addCv {
+  padding-left: 2em;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+.contactInfo > div {
+  display: flex;
+  gap: 2em;
+}
+
+.leftCv > div {
+  display: grid;
+  justify-content: center;
+}
+
+.rightCv {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-right: 4em;
+}
+
+.cvSide {
+  font-size: 12px;
+}
+
+.cvSide > h1 {
+  font-size: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

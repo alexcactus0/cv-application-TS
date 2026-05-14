@@ -60,7 +60,7 @@ export function TitleNameSec() {
   return (
     <section className="titleName">
       <h1>Your Title Name Here</h1>
-      <div className="linehz"></div>
+      <div className="linehz border-[1px]"></div>
     </section>
   );
 }
@@ -69,6 +69,7 @@ export function ProfessionalSec() {
   return (
     <section className="professionalSection">
       <p>Your Professional Info here....</p>
+      <div className="linehz border-[1px]"></div>
     </section>
   );
 }
@@ -78,6 +79,7 @@ export function EducatinSec() {
     <section className="educationSection">
       <h1>EDUCATION</h1>
       <div className="educationParts"></div>
+      <div className="linehz border-[1px]"></div>
     </section>
   );
 }

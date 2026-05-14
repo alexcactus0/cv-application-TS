@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import AddCv from "./components/Home/AddCv";
 import DefaultCv from "./components/CV-Types/DefaultCv";
 import type { JSX } from "react";
+import { Outlet } from "react-router";
 
 interface AppRoute {
   path?: string;
@@ -23,8 +24,15 @@ const routes: AppRoute[] = [
       { path: "home", element: <Home /> },
       {
         path: "add_new_cv",
-        element: <AddCv />,
-        children: [{ path: "default_CV", element: <DefaultCv /> }],
+        element: (
+          <div className="cvs-wrapper">
+            <Outlet />
+          </div>
+        ),
+        children: [
+          { index: true, element: <AddCv /> },
+          { path: "default_cv", element: <DefaultCv /> },
+        ],
       },
     ],
   },
